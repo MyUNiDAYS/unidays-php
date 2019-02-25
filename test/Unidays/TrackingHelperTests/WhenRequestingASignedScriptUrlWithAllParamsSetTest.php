@@ -15,7 +15,7 @@ class WhenRequestingASignedScriptUrlWithAllParamsSetTest extends TestCaseBase
         $details->withItemsTax(34.50);
         $details->withShippingGross(5.00);
         $details->withShippingDiscount(3.00);
-        $details->withItemsGross(230.00);
+        $details->withItemsGross(1000.00);
         $details->withItemsOtherDiscount(10.00);
         $details->withUnidaysDiscountPercentage(10.00);
         $details->withNewCustomer(true);
@@ -69,11 +69,11 @@ class WhenRequestingASignedScriptUrlWithAllParamsSetTest extends TestCaseBase
      *              ["ItemsTax", "34.50"]
      *              ["ShippingGross", "5.00"]
      *              ["ShippingDiscount", "3.00"]
-     *              ["ItemsGross", "230.00"]
+     *              ["ItemsGross", "1000.00"]
      *              ["ItemsOtherDiscount", "10.00"]
      *              ["UNiDAYSDiscountPercentage", "10.00"]
      *              ["NewCustomer", "True"]
-     *              ["Signature", "c6sNwe3kcvr3/NYH+661/37BSP1RFIgrJ2LJ5e3ETOTD0kPBb6gzqvR8uEhFEJaksfBxy9Ct/rrn9/8fH0tuQQ=="]
+     *              ["Signature", "CJUr1kkv/426vsLQPGYlrt08xhkQ20ySx7262oGxRFFWbr7190A5Obalm6D67A45efC/MJAkGQeUgQjzIWXbZA=="]
      */
     public function TheParameterShouldBeCorrect($parameter, $result)
     {

@@ -98,7 +98,7 @@ class TrackingHelper
 
     private function url_encode_number($number)
     {
-        return urlencode(number_format($number, 2, '.', ','));
+        return urlencode(number_format($number, 2, '.', ''));
     }
 
     private function parse_boolean($bool)
